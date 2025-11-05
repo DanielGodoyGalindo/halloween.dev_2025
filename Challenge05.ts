@@ -64,8 +64,8 @@ function changeLock(current: string, target: string): number {
     for (let i = 0; i < current.length; i++) {
         let currentNumber = Number(currentAll[i]);
         let targetNumber = Number(targetAll[i]);
-        if (currentNumber > targetNumber) { // 4 > 1
-            let target10 = targetNumber + 10; // 11
+        if (currentNumber > targetNumber) {
+            let target10 = targetNumber + 10;
             if (Math.abs(currentNumber - targetNumber) < Math.abs(currentNumber - target10)) { // 3 < 7
                 movements += Math.abs(currentNumber - targetNumber);
             } else {
